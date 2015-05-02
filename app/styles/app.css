@@ -1,0 +1,15 @@
+.house {
+  background-color:hsla(0, 50%, 50%, 0.3);
+}
+
+.cat {
+  background-color:hsla(180, 50%, 50%, 0.3);
+}
+
+.kitten {
+  background-color:hsla(270, 50%, 50%, 0.3);
+}
+
+.house {
+  margin-bottom:1em;
+}
