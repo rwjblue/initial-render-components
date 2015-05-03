@@ -1,15 +1,10 @@
-index.hbs<br>
-
-<p>Three levels of components nested. house -> cats -> kittens.</p>
+<p>Three levels of components nested. <code>house -> cats -> kittens</code>.</p>
 
 <p>
-  Fairly similar to a real case, where we have a list of things (component a),
-  each with a bunch of inline editables (component b), which in turn contain a few inputs etc that are components.
+  Fairly similar to a real case, where we have a list of things (level 1),
+  each with a bunch of inline editables (level 2), which in turn contain a few inputs etc that are components (level 3).
+  In this case of ours it's slow on initial render and when sorting (redrawing the list).
 </p>
-
-<p>50 items feels like common amount for a list.</p>
-
-<p>In our case we see this on the initial render, as well as on sorting (which basically re-draws the entire list)</p>
 
 <hr>
 

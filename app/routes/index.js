@@ -11,7 +11,7 @@ var range = function(n) {
 export default Ember.Route.extend({
 
   model() {
-    return range(50).map(() =>
+    return range(100).map(() =>
       range(7).map(() =>
         range(2)
       )

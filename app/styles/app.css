@@ -13,3 +13,8 @@
 .house {
   margin-bottom:1em;
 }
+
+p {
+  max-width:40em;
+  line-height:1.4;
+}
