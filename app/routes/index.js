@@ -8,14 +8,18 @@ var range = function(n) {
   return res;
 };
 
+var generateItems = function() {
+  return range(100).map(() =>
+    range(7).map(() =>
+      range(2)
+    )
+  );
+};
+
 export default Ember.Route.extend({
 
   model() {
-    return range(100).map(() =>
-      range(7).map(() =>
-        range(2)
-      )
-    );
+    return generateItems();
   }
 
 });
