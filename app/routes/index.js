@@ -20,6 +20,11 @@ export default Ember.Route.extend({
 
   model() {
     return generateItems();
+  },
+
+  afterModel() {
+    console.time('render');
+    Ember.run.schedule('afterRender', () => console.timeEnd('render'));
   }
 
 });
