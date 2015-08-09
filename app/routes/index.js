@@ -23,8 +23,9 @@ export default Ember.Route.extend({
   },
 
   afterModel() {
-    console.time('render');
-    Ember.run.schedule('afterRender', () => console.timeEnd('render'));
+    const timerName = 'render: ' + Ember.VERSION;
+    console.time(timerName);
+    Ember.run.schedule('afterRender', () => console.timeEnd(timerName));
   }
 
 });
