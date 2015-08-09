@@ -6,8 +6,9 @@
   which in turn contain a few inputs etc that are components (level 3).
 </p>
 
+<button {{action 'generateItems'}}>Run!</button> {{renderTime}}
 <hr>
 
-{{#each model as |i|}}
+{{#each items as |i|}}
   {{x-house cats=i}}
 {{/each}}
